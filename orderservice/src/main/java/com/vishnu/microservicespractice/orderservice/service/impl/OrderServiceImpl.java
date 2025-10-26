@@ -17,13 +17,13 @@ public class OrderServiceImpl implements OrderService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(OrderServiceImpl.class);
 
-    private final RestTemplate restTemplate;
+    //private final RestTemplate restTemplate;
     private final OrderRepository orderRepository;
     private final RestClientConfig  restClientConfig;
 
     @Autowired
     public OrderServiceImpl(RestTemplate restTemplate, OrderRepository orderRepository) {
-        this.restTemplate = restTemplate;
+        //this.restTemplate = restTemplate;
         this.orderRepository = orderRepository;
         this.restClientConfig = new RestClientConfig();
     }
